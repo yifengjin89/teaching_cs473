@@ -15,6 +15,13 @@ public class ExampleController {
         return "hello world";
     }
 
+    @GetMapping("/name")
+    public String name() {
+        return "hello world, YIFENG JIN, 12057923";
+    }
+
+
+
     @GetMapping("/example")
     public ExampleResponse example(
             @RequestParam(name="name") String name,
